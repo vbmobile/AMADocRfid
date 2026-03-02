@@ -1,0 +1,60 @@
+{
+  "originHash" : "c9fdc39db4ba7de6dcc7961c96829b1cd51c69927f7c0ac6d1f4ca08425c3b9e",
+  "pins" : [
+    {
+      "identity" : "cocoalumberjack",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CocoaLumberjack/CocoaLumberjack.git",
+      "state" : {
+        "revision" : "a9ed4b6f9bdedce7d77046f43adfb8ce1fd54114",
+        "version" : "3.9.0"
+      }
+    },
+    {
+      "identity" : "matomo-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vbmobile/matomo-sdk-ios",
+      "state" : {
+        "revision" : "06eb3589f3e0a5a5ff55995523cffcbaaad055c2",
+        "version" : "7.7.0"
+      }
+    },
+    {
+      "identity" : "nfcpassportreader",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AndyQ/NFCPassportReader.git",
+      "state" : {
+        "revision" : "00bd4a336bc36af0a978c76e7461031ca99e576a",
+        "version" : "2.1.2"
+      }
+    },
+    {
+      "identity" : "openssl",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/OpenSSL.git",
+      "state" : {
+        "revision" : "8cb1d641ab5ebce2cd7cf31c93baef07bed672d4",
+        "version" : "1.1.2301"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log",
+      "state" : {
+        "revision" : "bbd81b6725ae874c69e9b8c8804d462356b55523",
+        "version" : "1.10.1"
+      }
+    },
+    {
+      "identity" : "vbutils",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vbmobile/VBUtils",
+      "state" : {
+        "revision" : "7fa447bf0c4129b81be19bd4a18e9bd9e2ce60cb",
+        "version" : "2.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
