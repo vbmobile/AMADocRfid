@@ -1,6 +1,6 @@
 // swift-tools-version: 6.2
 import PackageDescription
-//
+
 let package = Package(
     name: "AMADocRFIDReadiOS",
     platforms: [
@@ -13,7 +13,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/vbmobile/AMADocModeliOS", .upToNextMinor(from: "1.0.0")),
+        .package(url: "https://github.com/vbmobile/AMADocModeliOS", exact: "1.0.0-rc24"),
         .package(url: "https://github.com/AndyQ/NFCPassportReader.git", exact: "2.1.2"),
         .package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", from: "3.8.0"),
         .package(url: "https://github.com/vbmobile/VBUtils", exact: "2.0.2"),
@@ -22,17 +22,15 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AMADocRFIDReadiOS",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRfid/AMADocRFIDReadiOS-1.0.0-rc4.zip",
-            checksum: "fe9844d4061aa5d2f10958566fcb346381c50c977dc6f5fcda3ccce2da6dc310"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRfid/AMADocRFIDReadiOS-1.0.0-rc5.zip",
+            checksum: "c28a23ae7f767a3a326ad6d22d6d2212e7376b77ff1ba2ad886c1fd043806df0"
         ),
         .target(
             name: "AMADocRFIDReadiOSWrapper",
             dependencies: [
                 .target(name: "AMADocRFIDReadiOS"),
-                .target(name: "openjp2"),
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
                 "NFCPassportReader",
-                .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
                 .product(name: "CocoaLumberjackSwift", package: "CocoaLumberjack"),
                 .product(name: "VBUtils", package: "VBUtils"),
                 .product(name: "VBNetworkClient", package: "VBNetworkClient")
