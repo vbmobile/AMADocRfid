@@ -33,6 +33,7 @@ let package = Package(
             name: "AMADocRFIDReadiOSWrapper",
             dependencies: [
                 .target(name: "AMADocRFIDReadiOS"),
+                .target(name: "openjp2"),
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
                 "NFCPassportReader",
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
