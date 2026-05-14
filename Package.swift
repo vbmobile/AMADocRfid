@@ -21,13 +21,9 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "openjp2",
-            path: "Sources/openjp2.xcframework"
-        ),
-        .binaryTarget(
             name: "AMADocRFIDReadiOS",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRfid/AMADocRFIDReadiOS-1.0.0-rc3.zip",
-            checksum: "947707a0d5bc0689dde59d1144c23d706c995ad62b950d69cd4dee45dd875b73"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRfid/AMADocRFIDReadiOS-1.0.0-rc4.zip",
+            checksum: "fe9844d4061aa5d2f10958566fcb346381c50c977dc6f5fcda3ccce2da6dc310"
         ),
         .target(
             name: "AMADocRFIDReadiOSWrapper",
