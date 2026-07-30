@@ -16,7 +16,7 @@ let package = Package(
         .package(url: "https://github.com/vbmobile/AMADocModeliOS", .upToNextMinor(from: "2.0.0")),
         .package(url: "https://github.com/AndyQ/NFCPassportReader.git", exact: "2.1.2"),
         .package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", from: "3.8.0"),
-        .package(url: "https://github.com/vbmobile/VBUtils", exact: "3.0.3"),
+        .package(url: "https://github.com/vbmobile/AMAUtils", exact: "3.0.4"),
         .package(url: "https://github.com/vbmobile/VBNetworkClient", exact: "6.0.1"),
     ],
     targets: [
@@ -32,7 +32,7 @@ let package = Package(
                 .product(name: "AMADocModeliOS", package: "AMADocModeliOS"),
                 "NFCPassportReader",
                 .product(name: "CocoaLumberjackSwift", package: "CocoaLumberjack"),
-                .product(name: "AMAUtils", package: "VBUtils"),
+                .product(name: "AMAUtils", package: "AMAUtils"),
                 .product(name: "AMANetworkClient", package: "VBNetworkClient")
             ],
             path: "Sources",
