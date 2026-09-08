@@ -14,7 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/vbmobile/AMADocModel", .upToNextMinor(from: "3.1.0")),
-        .package(url: "https://github.com/AndyQ/NFCPassportReader.git", exact: "2.1.2"),
+        .package(url: "https://github.com/vbmobile/AMANFCPassportReader", exact: "2.3.3-vb.2"),
         .package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", from: "3.8.0"),
         .package(url: "https://github.com/vbmobile/AMAUtils", .upToNextMajor(from: "3.0.4")),
         .package(url: "https://github.com/vbmobile/AMANetworkClient", .upToNextMinor(from: "6.0.1")),
@@ -22,15 +22,15 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AMADocRFIDReadiOS",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRFIDReadiOS/AMADocRFIDReadiOS-3.1.0.zip",
-            checksum: "4dbb25b9ca57023c3339a3e0873981f95ba330aaa201329a4e5c7736f030eda2"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRFIDReadiOS/AMADocRFIDReadiOS-3.1.1.zip",
+            checksum: "595c45de0f87ee14b456bf7311335e3a6cd226a3124ae3b849a34f948066c16c"
         ),
         .target(
             name: "AMADocRFIDReadiOSWrapper",
             dependencies: [
                 .target(name: "AMADocRFIDReadiOS"),
                 .product(name: "AMADocModel", package: "AMADocModel"),
-                "NFCPassportReader",
+                "AMANFCPassportReader",
                 .product(name: "CocoaLumberjackSwift", package: "CocoaLumberjack"),
                 .product(name: "AMAUtils", package: "AMAUtils"),
                 .product(name: "AMANetworkClient", package: "AMANetworkClient")
