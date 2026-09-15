@@ -16,14 +16,14 @@ let package = Package(
         .package(url: "https://github.com/vbmobile/AMADocModel", .upToNextMinor(from: "3.1.0")),
         .package(url: "https://github.com/vbmobile/AMANFCPassportReader", exact: "2.3.3-vb.2"),
         .package(url: "https://github.com/CocoaLumberjack/CocoaLumberjack.git", from: "3.8.0"),
-        .package(url: "https://github.com/vbmobile/AMAUtils", .upToNextMajor(from: "3.0.4")),
-        .package(url: "https://github.com/vbmobile/AMANetworkClient", .upToNextMinor(from: "6.0.1")),
+        .package(url: "https://github.com/vbmobile/AMAUtils", .upToNextMinor(from: "3.0.4")),
+        .package(url: "https://github.com/vbmobile/AMANetworkClient.git", .upToNextMinor(from: "7.0.2")),
     ],
     targets: [
         .binaryTarget(
             name: "AMADocRFIDReadiOS",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRFIDReadiOS/AMADocRFIDReadiOS-3.1.2.zip",
-            checksum: "cab6b88c54d8af38f0271660b27a6c9139e122e6dcc3b7bd7d7996824cce8381"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRFIDReadiOS/AMADocRFIDReadiOS-3.2.0.zip",
+            checksum: "02cd1abb8ea9c3a54154d51b8931d133ba2fbf9fb2327cae07bf8595f910c9dd"
         ),
         .target(
             name: "AMADocRFIDReadiOSWrapper",
