@@ -22,8 +22,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AMADocRFIDReadiOS",
-            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRFIDReadiOS/AMADocRFIDReadiOS-3.2.1.zip",
-            checksum: "3e73eb909cc5b639d0891e928f9e397a90a6475fd4ac2abb8624924ade1fb62c"
+            url: "https://vbmobileidstorage.blob.core.windows.net/ios/AMADocRFIDReadiOS/AMADocRFIDReadiOS-3.2.2.zip",
+            checksum: "c0e4f3426d11d6af9f934eed2b9dcdd45cd4365122453a10dbefecf4f22004f5"
         ),
         .target(
             name: "AMADocRFIDReadiOSWrapper",
